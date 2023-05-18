@@ -1,0 +1,42 @@
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(242,246,248,255);
+}
+header {
+    justify-content: center;
+    display: flex;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+}
+
+a[href*="monthly"] {
+    padding: 10px;
+    background-color: white;
+    margin:5px 1px;
+    
+}
+
+.active {
+    padding:10px;
+    margin:5px 1px;
+    background-color: white;
+    display: inline-block;
+}
+
+#tiles {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+section {
+    background-color:white;
+}
