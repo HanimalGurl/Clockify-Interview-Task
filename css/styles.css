@@ -62,7 +62,7 @@ a[href*="monthly"] {
     justify-content: center;    
 }
 
-#tiles :hover {
+#tiles:hover {
     transform: scale(1.1);
     z-index: 2;
     transition: 1s;
@@ -80,6 +80,7 @@ a[href*="monthly"] {
 #basic {
     color: #3d4853;
     border-top: 3px solid #3d4853;
+    
 }
 
 #standard {
@@ -96,7 +97,6 @@ a[href*="monthly"] {
     color: #9b51e0;
     border-top: 3px solid #9b51e0;
 }
-
 
 
 h2 {
@@ -133,6 +133,7 @@ li {
 
 #basic button:hover {
     background: #7f95ab;  
+    cursor: pointer;
 }
 
 #standard button {
@@ -141,6 +142,7 @@ li {
 
 #standard button:hover {
     background: #13345f;
+    cursor: pointer;
 }
 
 #pro button {
@@ -148,7 +150,8 @@ li {
 }
 
 #pro button:hover {
-    background: #662121;  
+    background: #662121; 
+    cursor: pointer; 
 }
 
 #enterprise button {
@@ -156,14 +159,14 @@ li {
 }
 
 #enterprise button:hover {
-    background: #47216a
+    background: #47216a;
+    cursor: pointer;
 }
 
 
 
 button {   
     text-align: center;
-    justify-content: center;
     padding: 10px;
     color: white;
     text-transform: uppercase;
@@ -180,4 +183,18 @@ button {
     color: #3d4853;
     border-top: 1px black solid;
     text-align: center;
+}
+
+#contact {
+    text-decoration: none;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+#contact:hover {
+    text-decoration: none;
+    color: #3d0d69;
+    cursor: pointer;
 }
