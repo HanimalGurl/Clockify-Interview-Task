@@ -62,7 +62,7 @@ a[href*="monthly"] {
     justify-content: center;    
 }
 
-#tiles:hover {
+#basic:hover, #standard:hover, #pro:hover, #enterprise:hover {
     transform: scale(1.1);
     z-index: 2;
     transition: 1s;
@@ -127,6 +127,17 @@ li {
     color: #3d4853;
 }
 
+button {   
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 #basic button {
     background: #3d4853;  
 }
@@ -165,16 +176,6 @@ li {
 
 
 
-button {   
-    text-align: center;
-    padding: 10px;
-    color: white;
-    text-transform: uppercase;
-    border: none;
-}
-
-
-
 .seat {
     font-size: 0.8em;
 }
@@ -197,4 +198,11 @@ button {
     text-decoration: none;
     color: #3d0d69;
     cursor: pointer;
+}
+
+p .figure {
+    font-size: 2.5em;
+    position: relative;
+    display: inline-block;
+    top: 10px;
 }
