@@ -3,40 +3,181 @@ html {
     font-family: 'Roboto', sans-serif;
     background-color: rgba(242,246,248,255);
 }
-header {
+h1 {
     justify-content: center;
     display: flex;
     font-size: 1.5em;
     font-weight: normal;
+    margin: 50px 10px 10px 10px;
 }
 
 .topnav {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
+    
+}
+
+.active, a[href*="monthly"] {
+    width: 250px;
+    text-align: center;
+    padding: 15px 15px;
+    color: #4a5b68;
+    text-decoration: none;
+    border: 0.5px #c9d5db solid;
+    transition: 0.2s;
+
+}
+
+.active:hover,  a[href*="monthly"]:hover {
+  box-shadow: 0 0 12px rgba(57, 68, 81, 0.3) inset;
 }
 
 a[href*="monthly"] {
-    padding: 10px;
-    background-color: white;
-    margin:5px 1px;
+    background-color: #f0f0f0;
     
 }
 
 .active {
-    padding:10px;
-    margin:5px 1px;
-    background-color: white;
+    background-color: #c6d2d9;
     display: inline-block;
 }
 
-#tiles {
-    display: flex;
-    flex-flow: row wrap;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1em;
+.active #save{
+    padding: 5px 10px;
+    margin: 1px;
+    color: white;
+    background-color:#4caf50;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 75%;
 }
 
-section {
-    background-color:white;
+#tiles {
+    width: 99%;
+    height: fit-content;
+    padding: 10px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;    
+}
+
+#tiles :hover {
+    transform: scale(1.1);
+    z-index: 2;
+    transition: 1s;
+ }
+
+#basic, #standard, #pro, #enterprise {
+    
+    width:20%;
+    background:white;
+    margin: 0px 1px;
+    border: 0.05px solid black;
+    border-bottom: 2px solid black;
+}
+
+#basic {
+    color: #3d4853;
+    border-top: 3px solid #3d4853;
+}
+
+#standard {
+    color: #2f80ed;
+    border-top: 3px solid #2f80ed;
+}
+
+#pro {
+    color: #eb5757;
+    border-top: 3px solid #eb5757;
+}
+
+#enterprise {
+    color: #9b51e0;
+    border-top: 3px solid #9b51e0;
+}
+
+
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+ol {
+    list-style: none;
+}
+
+li {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    color: #3d4853;
+}
+
+#basic button {
+    background: #3d4853;  
+}
+
+#basic button:hover {
+    background: #7f95ab;  
+}
+
+#standard button {
+    background: #2f80ed;
+}
+
+#standard button:hover {
+    background: #13345f;
+}
+
+#pro button {
+    background: #eb5757;  
+}
+
+#pro button:hover {
+    background: #662121;  
+}
+
+#enterprise button {
+    background: #9b51e0
+}
+
+#enterprise button:hover {
+    background: #47216a
+}
+
+
+
+button {   
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+}
+
+
+
+.seat {
+    font-size: 0.8em;
+}
+
+#server-private {
+    color: #3d4853;
+    border-top: 1px black solid;
+    text-align: center;
 }
