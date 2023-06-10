@@ -191,8 +191,12 @@ button {
 
 #server-private {
     color: #3d4853;
-    border-top: 1px black solid;
     text-align: center;
+}
+
+hr {
+    width:90%;
+    margin:0 auto;
 }
 
 #contact {
